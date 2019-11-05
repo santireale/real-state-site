@@ -5,12 +5,11 @@ const PropertySchema = Schema({
   description: String,
   slug: String,
   type: String,
+  currency: String,
   price: String,
   featured: Boolean,
-  sector: {
-    type: String,
-    enum: ['Banda Norte', 'Castelli', 'Centro']
-  }
+  photo: String,
+  sector: String
 });
 
 const propertyModel = mongoose.model('properties', PropertySchema);
